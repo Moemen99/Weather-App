@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #1e202b;
+}
+h3  {
+    font-size: 3.125rem;
+}
+h3 .temrature {
+    font-size: 12.5rem;
+}
+h3 span{
+    font-size: 12.5rem;
+}
+.img{
+    width: 6.875rem;
+}
+
+ul.effect li a{
+    border: .1875rem solid transparent;
+    border-radius: 1.25rem;
+    padding:  0 1.875rem !important;
+    margin: .0625rem;
+}
+
+ul.effect li a.active{
+    border: .1875rem solid #14bcdf;
+}
+
+
+ul.effect li a:hover{
+color: #14BCDF !important;
+border: .1875rem solid #14BCDF;
+
+
+}
+
+
+.forcast{
+   
+    background-color: #1e202b;
+    
+    margin-bottom: 1.25rem
+    
+    
+}
+.forcast-1{
+    background-image: url(../images/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.color1{
+   background-color: #262936;
+   border-radius: .625rem;
+}
+.color2{
+    background-color: #1e202b;
+    border-radius: .625rem;
+}
+
+
+
+
+.input-body{
+    background-color: #1E202B;
+    padding: .625rem;
+
+}
+.input-body input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    font-size: 1.25rem;
+}
+input[text], input[text]:focus{ 
+color: white;
+
+}
+
+.social-links a {
+    
+        width: 3.125rem;
+        height: 3.125rem;
+        display: inline-block;
+        border-radius: 50%;
+        background: #1e202b;
+        color: #009ad8;
+        text-align: center;
+        line-height: 2;
+        margin: .125rem;
+        font-size: 1.5625rem;
+        transition: 0.5s;
+        margin-right: .625rem;
+
+    }
+    .social-links a:hover {
+    
+        
+        background: #009ad8;
+        color: white;
+        
+       
+
+    }
+    
+
+.day-of-month{
+    background-color: #1E202B;
+    border-radius: .625rem;
+    /* box-shadow: 0 1.25rem 1.875rem .0625rem black; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.footer{
+    background-color:#262936
+    
+}
+
+
+
+@media (max-width:1400px){
+    html{
+        font-size: .875rem;
+    }
+    }
+    @media (max-width:1200px){
+        html{
+            font-size: .8125rem;
+        }
+
+    
+    }
+    
+    @media (max-width:992px){
+        html{
+            font-size: .8125rem;
+        }
+       
+        
+    }
+    
+    @media (max-width:780px){
+        html{
+            font-size: .8125rem;
+        }
+       
+        
+    }
+    
+    
+    @media (max-width:576px){
+        
+        html{
+            font-size: .8125rem;
+        }
+        
+        
+    }
+    
+    /* .forcast .body{
+        background-color: #262936;
+        width: 6.25rem;
+        height: 6.25rem;
+    } */

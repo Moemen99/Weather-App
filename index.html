@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- N    A   V     B    A    R   -->
+
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-5" >
+      <div class="container-lg">
+        
+        <a class="navbar-brand d-flex justify-content-between gap-2 me-5" href="#">
+          <div class="align-self-center img"><img src="images/logo.png" class="w-100" alt="logo"></div>
+              
+              <p class=" d-flex flex-column pt-4"><span class="fs-2">Weather</span><span class="fs-6">tagline goes here</span></p>
+        </a>
+  
+  
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0  effect ">
+            <li class="nav-item m-auto">
+              <a class="nav-link active fs-4 " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item m-auto">
+              <a class="nav-link  fs-4" href="#">News</a>
+            </li>
+            <li class="nav-item m-auto">
+              <a class="nav-link fs-4" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item m-auto">
+              <a class="nav-link fs-4 " href="#">Photos</a>
+            </li>
+            <li class="nav-item m-auto">
+              <a class="nav-link  fs-4" href="#">Contact</a>
+            </li>
+        
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  
+
+
+
+
+<!-- N    A   V     B    A    R   -->
+
+
+<!-- S   E  A   R   C  H  -->
+
+
+
+<section >
+  <div class="forcast    ">
+    <div class="forcast-1 forcast-img">
+      <div class="container-fluid container-lg pt-5  ">
+        <div class="input-body rounded-pill px-3 my-5">
+            <div class="input d-flex">
+              <input type="text" id="find" placeholder="Find your location..." class=" w-100 ">
+              <button class=" btn btn-primary rounded-pill px-5 py-3 fs-4 find">Find</button>
+            </div>
+        </div>
+          <div class="row text-white ">
+            <div class="col-12 col-xl-4 color1 mb-5 p-0">
+              
+              <div class="day-of-month d-flex justify-content-between  p-3 fs-5 fw-bold text-capitalize">
+                <p id="day"></p>
+                <p id="day-month"></p>
+              </div>
+              
+              <h2 id="location" class="fs-1 p-5"></h2>
+              <p class="text-center day-of-month prompt1"> Type a valid Location and press find 
+                let the magic happen  !!! </p>
+              <div class="body  h-75 ">
+               <div class="d-flex align-items-center  p-5 justify-content-between">
+                <h3 id="temprature" class="temrature"></h3>
+                <img src="" id="temp-icon" alt="temp-icon" class="d-none show1 w-25">
+               </div>
+               <div class="p-5 fs-3 fw-bold " id="text">
+                </div>
+                
+            
+              </div>
+              
+              
+            </div>
+
+            <div class="col-12 col-xl-4 color2 mb-5 p-0">
+              <div class="day-of-month nextCard text-center  py-3 fs-5 fw-bold text-capitalize">
+                <p class="day text-center "></p>
+              </div>
+              
+              <div class="body  h-75 ">
+                
+                <div class="d-flex align-items-center   flex-column p-5 ">
+                  <p class="text-center day-of-month prompt"> Type a valid Location and press find 
+                    let the magic happen  !!! </p>
+                <img src="" class="temp-icon d-none show w-25" alt="temp-icon">
+                <h3 class="temprature"></h3>
+                <h4 class="minTemprature"></h4>
+                <p class="p-5 fs-3 fw-bold condition">
+                </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-4 color1 mb-5 p-0">
+            <div class="day-of-month nextCard text-center  py-3 fs-5 fw-bold text-capitalize">
+              <p class="day"></p>
+            </div>
+            <div class="body  h-75 ">
+              <div class="d-flex align-items-center  p-5 flex-column">
+                <p class="text-center day-of-month prompt"> Type a valid Location and press find 
+                  let the magic happen  !!! </p>
+              <img src="" class="temp-icon d-none show w-25" alt="temp-icon">
+              <h3 class="temprature"></h3>
+              <h4 class="minTemprature"></h4>
+              <p class="p-5 fs-3 fw-bold condition">
+                
+              </p>
+              </div>
+          </div>
+        </div>
+          
+          
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- S   E  A   R   C  H  -->
+
+<!-- F    O    O    T    E    R -->
+
+
+
+<footer class=" footer py-5">
+  <div class="container-fluid container-lg ">
+    <div class="d-md-flex justify-content-lg-between ">  
+      <div class="input-body rounded-pill px-3 w-75 pb-3">
+      <div class="input d-flex justify-content-between">
+        <input type="text" placeholder="Enter your email to subscribe..." class="position-relative w-100 ">
+        <button class=" btn btn-primary rounded-pill px-5 py-3 fs-4">Subscribe</button>
+      </div>
+    </div>
+    <div class="social-links d-flex pt-3 pb-3 ">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-google"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+    </div></div>
+  
+    <p class="text-white fs-4 pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+</footer>
+<!-- F    O    O    T    E    R -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
