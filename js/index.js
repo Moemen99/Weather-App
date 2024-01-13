@@ -28,7 +28,7 @@ let monthArr = ["january","february","march","april","may","june","july","august
 let date = new Date();
 
 async function getRequest(country){
-   let request = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cf37042c431d4f0391b151643232602&q=${country}&days=3&aqi=no&alerts=no`)
+   let request = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=3bdb58edaa474090891123757230811=${country}&days=3&aqi=no&alerts=no`)
     response =await request.json()
     prompt1.classList.add("d-none");
     show1.classList.remove("d-none");
